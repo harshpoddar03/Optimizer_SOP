@@ -91,9 +91,11 @@ python ProximalGradient_unit-test.py
 This document provides a detailed analysis of the convergence properties shown in the four graphs generated from the proximal gradient method implementation.
 
 ## 1. LASSO Regression (L1 Regularization)
+<div align="center">
 
-<img src="assets/lasso_convergence.png" alt="LASSO Convergence" width="600"/>
+<img src="assets/lasso_convergence.png" alt="LASSO Convergence" width="800"/>
 
+</div>
 ### Key Observations
 
 The graph shows the convergence of objective function values over iterations for standard proximal gradient and accelerated FISTA when solving a LASSO regression problem.
@@ -122,8 +124,9 @@ Where L is the Lipschitz constant of the gradient of the smooth part, and x* is 
 
 ## 2. Elastic Net Regression (L1 + L2 Regularization)
 
-<img src="assets/elastic_net_convergence.png" alt="Elastic Net Convergence" width="600"/>
-
+<div align="center">
+<img src="assets/elastic_net_convergence.png" alt="Elastic Net Convergence" width="800"/>
+</div>
 ### Key Observations
 
 This graph shows the convergence behavior for elastic net regularization (combining L1 and L2 penalties).
@@ -142,9 +145,9 @@ The similarity to the LASSO graph indicates that:
 3. The accelerated method maintains its advantage regardless of the specific regularization type
 
 ## 3. Effect of Step Size on Convergence
-
-<img src="assets/step_size_comparison.png" alt="Step Size Convergence" width="600"/>
-
+<div align="center">
+<img src="assets/step_size_comparison.png" alt="Step Size Convergence" width="800"/>
+</div>
 ### Key Observations
 
 This graph compares convergence for different step size choices, expressed as fractions of 1/L (where L is the Lipschitz constant).
@@ -170,9 +173,9 @@ This graph compares convergence for different step size choices, expressed as fr
    - The empirical results show that slightly larger step sizes can work well in practice
 
 ## 4. Fixed vs Adaptive Step Size
-
-<img src="assets/adaptive_step_size.png" alt="Fixed vs Adaptive Step Size" width="600"/>
-
+<div align="center">
+<img src="assets/adaptive_step_size.png" alt="Fixed vs Adaptive Step Size" width="800"/>
+</div>
 ### Key Observations
 
 This graph compares a fixed step size approach with an adaptive approach using backtracking line search.

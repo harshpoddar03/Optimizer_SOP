@@ -105,7 +105,7 @@ The convergence behavior of the Moreau-Yosida approach depends on several factor
 ### Convergence Visualization
 
 <div align="center">
-<img src="./assets/moreau_yosida_convergence.png" alt="Convergence Plot" width="600"/>
+<img src="./assets/moreau_yosida_convergence.png" alt="Convergence Plot" width="800"/>
 </div>
 This plot demonstrates the convergence behavior of the Moreau-Yosida optimizer with different γ values on a LASSO problem. The y-axis (log scale) shows the objective function value, while the x-axis shows iterations.
 
@@ -158,7 +158,7 @@ As shown in the convergence plots:
 
 <div align="center">
 
-<img src="assets/moreau_yosida_smoothing.png" alt="Smoothing Plot" width="600"/>
+<img src="assets/moreau_yosida_smoothing.png" alt="Smoothing Plot" width="800"/>
 
 </div>
 
