@@ -41,6 +41,8 @@ class MoreauYosida:
         self._cached_prox_point = None
         self._cached_input = None
         
+    
+        
     def prox_point(self, x):
         """
         Compute the proximal point (minimizer of the Moreau envelope).
@@ -380,4 +382,22 @@ def default_gamma_schedule(gamma, iteration):
     # More aggressive gamma reduction - decrease gamma by a factor of 0.5 every 2 iterations
     if iteration > 0 and iteration % 2 == 0:
         return gamma * 0.5
-    return gamma
+    return 
+
+def soft_thresholding(x, threshold):
+    """
+    Soft thresholding operator (proximal operator for L1 norm).
+    
+    Parameters:
+    -----------
+    x : array-like
+        Input array
+    threshold : float
+        Threshold value
+        
+    Returns:
+    --------
+    y : array-like
+        Soft-thresholded array
+    """
+    return np.sign(x) * np.maximum(np.abs(x) - threshold, 0)

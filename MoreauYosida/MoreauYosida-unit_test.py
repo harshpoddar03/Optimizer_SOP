@@ -2,9 +2,12 @@ import numpy as np
 import unittest
 from scipy import optimize
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 # Import the implementation
-from MoreauYosida import MoreauYosida, MoreauYosidaOptimizer, default_gamma_schedule
-from proximal import soft_thresholding
+from MoreauYosida import MoreauYosida, MoreauYosidaOptimizer, default_gamma_schedule, soft_thresholding
 
 class TestMoreauYosida(unittest.TestCase):
     """
